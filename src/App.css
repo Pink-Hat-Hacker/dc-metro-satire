@@ -1,0 +1,48 @@
+/* Metro Map SVG CSS */
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+  fill: none;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+}
+
+.cls-1 {
+  stroke: #0aa848;
+}
+
+.cls-2 {
+  stroke: #fcd000;
+}
+
+.cls-3 {
+  stroke: #f49506;
+}
+
+.cls-4 {
+  stroke: #9fa5a4;
+}
+
+.cls-5 {
+  stroke: #1076c4;
+}
+
+.cls-6 {
+  stroke: #e72434;
+}
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.map-svg {
+  height: 80%;
+  width: 80%;
+}
