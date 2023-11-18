@@ -11,29 +11,20 @@
   stroke-width: 3px;
 }
 
-.cls-1 {
-  stroke: #0aa848;
-}
+.cls-1 {stroke: #0aa848;}
+.cls-2 {stroke: #fcd000;}
+.cls-3 {stroke: #f49506;}
+.cls-4 {stroke: #9fa5a4;}
+.cls-5 {stroke: #1076c4;}
+.cls-6 {stroke: #e72434;}
 
-.cls-2 {
-  stroke: #fcd000;
-}
+.cls-1:hover{ stroke-width: 6px;}
+.cls-2:hover{ stroke-width: 6px;}
+.cls-3:hover{ stroke-width: 6px;}
+.cls-4:hover{ stroke-width: 6px;}
+.cls-5:hover{ stroke-width: 6px;}
+.cls-6:hover{ stroke-width: 6px;}
 
-.cls-3 {
-  stroke: #f49506;
-}
-
-.cls-4 {
-  stroke: #9fa5a4;
-}
-
-.cls-5 {
-  stroke: #1076c4;
-}
-
-.cls-6 {
-  stroke: #e72434;
-}
 .map-container {
   display: flex;
   flex-direction: column;

@@ -2,6 +2,7 @@ import "../App.css";
 import React, { useState } from "react";
 import { Dialog, DialogTitle, DialogContent } from "@mui/material";
 import RandomMetroVid from "./RandomMetroVid";
+import { METRO_API_KEY } from "../config";
 
 const MetroMap = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -17,7 +18,7 @@ const MetroMap = () => {
         `https://api.wmata.com/Incidents.svc/json/Incidents`,
         {
           headers: {
-            api_key: "a9b51036598647c9bc1acc9e35a61418",
+            api_key: METRO_API_KEY,
           },
         }
       );
@@ -30,19 +31,20 @@ const MetroMap = () => {
       console.log(incidentsForLine);
 
       if (incidentsForLine.length > 0) {
-        setIncidentReport(incidentsForLine[0].Description);
+        const descriptions = incidentsForLine.map((incident) => incident.Description).join('\n \n \n');
+        setIncidentReport(descriptions);
         setIncidentDate(incidentsForLine[0].DateUpdated);
         setIncidentIDNumber(incidentsForLine[0].IncidentID);
         setIncidentType(incidentsForLine[0].IncidentType);
-        setTrainLineColor(line + " Line Incident Report:");
+        setTrainLineColor(`${line} Line Incident Report:`);
       } else {
-        setIncidentReport("No delays: " + line);
+        setIncidentReport(`No delays: ${line}`);
         setIncidentDate("");
         setIncidentIDNumber("");
         setIncidentType("");
         setTrainLineColor(
-          "Apparently there are no delays but this is probably happening on the " +
-            line + ":"
+          `Apparently there are no delays but this is probably happening on the
+            ${line} line:`
         );
       }
 

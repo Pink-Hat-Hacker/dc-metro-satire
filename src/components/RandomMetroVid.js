@@ -30,16 +30,13 @@ const RandomMetroVid = () => {
   const randomVideoId = getRandomVideoId();
 
   return (
-    <div>
       <iframe
-        width="560"
+        width="100%"
         height="315"
         src={`https://www.youtube.com/embed/${randomVideoId}`}
         title="Random Metro Video"
-        frameBorder="0"
         allowFullScreen
       ></iframe>
-    </div>
   );
 };
 
