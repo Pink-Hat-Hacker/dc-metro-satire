@@ -2,7 +2,7 @@ import "../App.css";
 import React, { useState } from "react";
 import { Dialog, DialogTitle, DialogContent } from "@mui/material";
 import RandomMetroVid from "./RandomMetroVid";
-import { METRO_API_KEY } from "../config";
+// import { METRO_API_KEY } from "../config";
 
 const MetroMap = () => {
   const [dialogOpen, setDialogOpen] = useState(false);
@@ -12,13 +12,15 @@ const MetroMap = () => {
   const [incidentType, setIncidentType] = useState("");
   const [trainLineColor, setTrainLineColor] = useState("");
 
+  const apiKey = process.env.REACT_APP_API_KEY;
+
   const handleLineClick = async (line) => {
     try {
       const response = await fetch(
         `https://api.wmata.com/Incidents.svc/json/Incidents`,
         {
           headers: {
-            api_key: METRO_API_KEY,
+            api_key: apiKey,
           },
         }
       );

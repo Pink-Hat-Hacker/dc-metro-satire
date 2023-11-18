@@ -2,7 +2,7 @@
   "name": "dc-metro-satire",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.dc-metro-satire.vercel.app",
+  "homepage": "https://www.dc-metro-satire.vercel.app/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
