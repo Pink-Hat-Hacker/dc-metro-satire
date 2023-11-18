@@ -1,3 +1,10 @@
+a {
+  color: black;
+}
+a:hover {
+  color: #e72434;
+}
+
 /* Metro Map SVG CSS */
 .cls-1,
 .cls-2,
@@ -30,10 +37,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.map-svg {
+  height: 45%;
+  width: 45%;
+}
+
+/* App heading, footer, and icons */
+.App {
   height: 100vh;
   width: 100vw;
 }
-.map-svg {
-  height: 80%;
-  width: 80%;
+.dcms-heading {
+  display: flex;
+  justify-content: space-between;
 }
+.dcms-name {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.dcms-icons {
+  display: flex;
+  gap: 10px;
+  padding-top: 40px;
+  padding-right: 20px;
+}
+
+.dcms-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .1rem;
+}
+
