@@ -12,12 +12,14 @@ function App() {
           <a
             href="https://github.com/pink-hat-hacker/dc-metro-satire"
             target="_blank"
+            rel="noreferrer"
           >
             <FaGithub size={40} />
           </a>
           <a
             href="https://www.linkedin.com/in/zoe-yoyo-valladares/"
             target="_blank"
+            rel="noreferrer"
           >
             <FaLinkedin size={40} />
           </a>
@@ -25,7 +27,7 @@ function App() {
       </div>
       <MetroMap></MetroMap>
       <div className="dcms-footer">
-        <a href="https://developer.wmata.com/">
+        <a href="https://developer.wmata.com/" target="_blank" rel="noreferrer">
           <h3>Powered by: WMATA API</h3>
         </a>
       </div>
