@@ -37,10 +37,12 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
+  width: 100vw;
 }
 .map-svg {
-  height: 45%;
-  width: 45%;
+  height: 100%;
+  width: 100%;
 }
 
 /* App heading, footer, and icons */
@@ -51,6 +53,7 @@ a:hover {
 .dcms-heading {
   display: flex;
   justify-content: space-between;
+  
 }
 .dcms-name {
   padding-top: 20px;
