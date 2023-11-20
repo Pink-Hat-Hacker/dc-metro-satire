@@ -26,7 +26,7 @@ const MetroMap = () => {
       );
 
       const data = await response.json();
-
+      console.log(data);
       const incidentsForLine = data.Incidents.filter((incident) =>
         incident.LinesAffected.includes(line)
       );
