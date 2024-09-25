@@ -20,16 +20,21 @@ const MetroMap = () => {
         `https://api.wmata.com/Incidents.svc/json/Incidents`,
         {
           headers: {
+            'Cache-Control': 'no-cache',
             api_key: apiKey,
           },
         }
       );
-
       const data = await response.json();
+      
+      // Raw Data Dump
       console.log(data);
+      
       const incidentsForLine = data.Incidents.filter((incident) =>
         incident.LinesAffected.includes(line)
       );
+
+      // Incident by Line
       console.log(incidentsForLine);
 
       if (incidentsForLine.length > 0) {
