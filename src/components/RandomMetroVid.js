@@ -3,7 +3,7 @@ import "../App.css";
 
 const RandomMetroVid = () => {
   const getRandomVideoId = () => {
-    // Replace with an array of YouTube video IDs
+    // Array of YouTube video EMBED IDs
     const videoIds = [
       "O5Y_onlHJYk?si=rK9qtN1QnyqM-Zra",
       "65xiTGSSVcg?si=RKR_uNtUi4GPbGu3",
@@ -21,7 +21,10 @@ const RandomMetroVid = () => {
       "xyPczDYqTSY?si=iH1hAeRRBtoCY-Jx",
       "4550lkjOgOU?si=hskmH3kH2RRzF9vd",
       "Kdm-w7o3tXA?si=qbPd0YS5mtO5ujx6",
-      "UYDcXb_nh-w?si=tznQEWl80yqXwizf"
+      "UYDcXb_nh-w?si=tznQEWl80yqXwizf",
+      "UxfwmuNK8o8?si=PBVfQj42Fs_18fRm",
+      "0w3hE36inkQ?si=v6S3L1tp44x5JOHB",
+      "1ldLlphXGlM?si=1JyWZzcbGwQlBRlw"
     ];
     const randomIndex = Math.floor(Math.random() * videoIds.length);
     return videoIds[randomIndex];

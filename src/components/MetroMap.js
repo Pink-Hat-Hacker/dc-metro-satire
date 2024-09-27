@@ -28,6 +28,7 @@ const MetroMap = () => {
       const data = await response.json();
       
       // Raw Data Dump
+      console.log("Raw Data Dump from WMATA: ");
       console.log(data);
       
       const incidentsForLine = data.Incidents.filter((incident) =>
@@ -35,6 +36,7 @@ const MetroMap = () => {
       );
 
       // Incident by Line
+      console.log("Raw Data For %d Line Incidents: ", line);
       console.log(incidentsForLine);
 
       if (incidentsForLine.length > 0) {
